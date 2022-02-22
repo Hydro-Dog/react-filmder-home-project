@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import LoginScreen from './components/login-screen/login-screen.component';
+import RegistrationScreen from './components/registration-screen/registration-screen.component';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />}></Route>
+      <Route path="login" element={<LoginScreen />}></Route>
+      <Route path="registration" element={<RegistrationScreen />}></Route>
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
