@@ -185,12 +185,6 @@ function RegistrationScreen() {
           ) : (
             formBlock
           )}
-          {/* {registrationCompleted === RegistrationStatusEnum.Completed ? (
-            <div>Completed </div>
-          ) : null}
-          {registrationCompleted === RegistrationStatusEnum.Failed ? (
-            <div>Error </div>
-          ) : null} */}
         </div>
       </div>
     </div>
